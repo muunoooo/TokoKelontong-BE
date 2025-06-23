@@ -44,11 +44,10 @@ JWT_SECRET="tokoklontong-secret"
 JWT_EXPIRES_IN="1d"
 ```
 
-### 4. Setup Database & Run Seeder
+### 4. Setup Database 
 
 ```bash
 npx prisma migrate dev --name init
-npm run seed
 ```
 
 ### 5. Run the Server
