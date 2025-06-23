@@ -22,7 +22,7 @@ This project is built using **NestJS, Prisma, PostgreSQL, and TypeScript**.
 
 ```bash
 git clone https://github.com/muunoooo/TokoKelontong-BE.git
-cd toko-klontong-be
+cd TokoKelontong-BE
 ```
 
 ### 2. Install Dependencies
