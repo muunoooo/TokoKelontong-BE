@@ -36,7 +36,10 @@ npm install
 Buat file `.env` dan isi dengan:
 
 ```env
-DATABASE_URL="postgresql://postgres:your_password@localhost:5432/tokoklontong"
+DATABASE_URL="postgresql://postgres.capdfdwjtlqplbebwwfe:59EPAmWT2RpAV6XH@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
+
+DIRECT_URL="postgresql://postgres.capdfdwjtlqplbebwwfe:59EPAmWT2RpAV6XH@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres"
+
 JWT_SECRET="tokoklontong-secret"
 JWT_EXPIRES_IN="1d"
 ```
@@ -74,11 +77,13 @@ Gunakan akun ini untuk login:
 ## 📡 API Endpoints (Ringkasan)
 
 ### Auth
+
 - `POST /auth/register` – Register user
 - `POST /auth/login` – Login dan dapatkan token
 - `GET /auth/me` – Info user (JWT protected)
 
 ### Product
+
 - `GET /products` – List produk (search, pagination)
 - `GET /products/:id` – Detail produk
 - `POST /products` – Tambah produk (**JWT required**)
@@ -90,6 +95,7 @@ Gunakan akun ini untuk login:
 ## 🧪 Seeder
 
 Seeder akan mengisi:
+
 - ✅ 1 admin user (`admin@gmail.com`)
 - ✅ 100 dummy produk dari `faker.js`
 
